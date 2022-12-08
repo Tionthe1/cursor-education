@@ -42,5 +42,4 @@ ${Math.floor(Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)) % 2 === 
 Середнє значення цін, округлене до другого знаку після коми: ${(tea + sandwich + free/3).toFixed(2)}
 Ціна зі знижкою: ${(tea - Math.random()).toFixed(2)}
 Чистий прибуток: ${(tea - Math.random()).toFixed(2) - (tea / 2)}
-
 `);
