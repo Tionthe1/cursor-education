@@ -1,11 +1,11 @@
-const tea =(15.678);
-const sandwich = (123.965);
-const free = (90.2345);
+const tea = 15.678;
+const sandwich = 123.965;
+const free = 90.2345;
 
 const arr = [tea, sandwich, free];
-const ttl = (tea + sandwich + free);
+const ttl = tea + sandwich + free;
 
-const wholeNumber = (Math.floor(tea) + Math.floor(sandwich) + Math.floor(free));
+const wholeNumber = Math.floor(tea) + Math.floor(sandwich) + Math.floor(free);
 
 console.log("Максимальне ціна: ", Math.max(... arr));
 console.log("Мінімальне ціна: ", Math.min(... arr));
@@ -42,5 +42,4 @@ ${Math.floor(Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)) % 2 === 
 Середнє значення цін, округлене до другого знаку після коми: ${(tea + sandwich + free/3).toFixed(2)}
 Ціна зі знижкою: ${(tea - Math.random()).toFixed(2)}
 Чистий прибуток: ${(tea - Math.random()).toFixed(2) - (tea / 2)}
-
 `);
