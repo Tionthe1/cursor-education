@@ -17,7 +17,7 @@ console.log("Сума округлена до сотень :", (Math.round(ttl/1
 if (wholeNumber % 2 === 0) {
    console.log("Округлена сума всіх товарів є парним числом ",  true)
 } else {
-   console.log("Округлена сума всіх товарів є непарним числом ", false)
+   console.log("Округлена сума всіх товарів є парним числом ", false)
 }
 
 console.log("Решта: ", 500 - ttl);
