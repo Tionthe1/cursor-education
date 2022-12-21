@@ -65,7 +65,7 @@ document.writeln(`Функція №6: ${getRandomNumber((min = prompt("Введ
 /* Створити функцію, яка рахує скільки разів певна буква повторюється в слові.
 Приклад: countLetter("а", "Асталавіста") -> 4 */
 
-/* let word = prompt("Введіть слово");
+let word = prompt("Введіть слово");
 let letter = prompt("Введіть букву, яку будемо шукати");
 
 function countLetter(word, letter) {
@@ -76,20 +76,12 @@ function countLetter(word, letter) {
    counter = arr.filter(arr => arr == letter);
    return( counter.length);
 }
-alert("Кількість повторень: " + countLetter(word, letter)); */
+document.writeln(`Функція №7: ${salaryWithoutTax((word = prompt("Введіть слово")), (letter = prompt("Введіть букву, яку будемо шукати")) ) }<br>`)
+
 
 /* Створіть функцію, яка конвертує долари в гривні та навпаки в залежності від
 наявності символа $ або UAH в рядку. Приклад: convertCurrency("100$") -> 2500
 грн. або convertCurrency("2500UAH") -> 100$ */
-
-
-
-
-
-
-/* 
-
-let currency = prompt("Введіть суму та тип валюти в UAH або в $");
 
 function convertCurrency(currency){
 
@@ -108,7 +100,8 @@ else if (currency.includes('uah')) {
    }
    return currency;
 }
-alert(convertCurrency(currency)); */
+document.writeln(`Функція No8: ${convertCurrency(currency = prompt("Введіть суму та тип валюти в UAH або в $"))}`)
+
 
 
 
