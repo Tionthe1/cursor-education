@@ -65,9 +65,6 @@ document.writeln(`Функція №6: ${getRandomNumber((min = prompt("Введ
 /* Створити функцію, яка рахує скільки разів певна буква повторюється в слові.
 Приклад: countLetter("а", "Асталавіста") -> 4 */
 
-let word = prompt("Введіть слово");
-let letter = prompt("Введіть букву, яку будемо шукати");
-
 function countLetter(word, letter) {
    word = word.toLowerCase();
    letter = letter.toLowerCase();
