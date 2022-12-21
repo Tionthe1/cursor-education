@@ -114,7 +114,7 @@ document.writeln(`Функція №6: ${countLetter((word = prompt("Введі�
 
 document.writeln(`Функція No7: ${convertCurrency(currency = prompt("Введіть суму та тип валюти в UAH або в $"))}<br>`)
 
-document.writeln(`Функція No9: ${genPassword(passwordLength = prompt("Введіть кілкість символів"))}<br>`)
+document.writeln(`Функція No8: ${genPassword(passwordLength = prompt("Введіть кілкість символів"))}<br>`)
 
 
 
