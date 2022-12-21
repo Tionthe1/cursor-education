@@ -1,7 +1,6 @@
 /* Створити функцію getMaxDigit(number) – яка отримує будь-яке число та
 виводить найбільшу цифру в цьому числі. Приклади: 1236 -> 6, 987 -> 9, 385 -> 8 */
 
-
 function getMaxDigit(number){
    
    let arr = String(number).split('');
@@ -9,7 +8,7 @@ function getMaxDigit(number){
    number = getMaxDigit(number)
       return number;
    }
-   document.writeln(`Функція №1: ${getMaxDigit(number= prompt("Введіть число для визначення"))}<br>`)
+   
    
 
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
@@ -24,43 +23,33 @@ function getNumber(a, b) {
     return result;
 
   }
-document.writeln(`Функція №2: ${getNumber((a = prompt("Введіть число для визначення ступеня ")), (b = prompt("Введіть степінь числа"))) }<br>`)
-
 
 
 /* Створити функцію, яка форматує ім'я, роблячи першу букву великою. ("влад" ->
 "Влад", "вЛАД" -> "Влад" і так далі); */
 
-
 function ucFirst(str) {
     return( str[0].toUpperCase() + str.slice(1));
 }
- document.writeln(`Функція №3: ${ucFirst(str = prompt("Введіть ім'я")) }<br>`)
-
-
+ 
 
 /* Створити функцію, яка вираховує суму, що залишається після оплати податку від
 зарабітньої плати. (Податок = 18% + 1.5% -> 19.5%). Приклад: 1000 -> 805 */
 
-
-
 function salaryWithoutTax(value) {
   return Math.floor(value - value * (19.5 / 100));
 }
-document.writeln(`Функція №5: ${salaryWithoutTax(value = prompt("Введіть розмір заробітної плати")) }<br>`)
+
 
 
 /* Створити функцію, яка повертає випадкове ціле число в діапазоні від N до M.
 Приклад: getRandomNumber(1, 10) -> 5 */
 
-/* let min = prompt("Введіть мінімальне значення діапазона");
-let max = prompt("Введіть максимальне значення діапазона"); */
-
 function getRandomNumber(min, max) {
     let rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
 }
-document.writeln(`Функція №6: ${getRandomNumber((min = prompt("Введіть мінімальне значення діапазона")),(max = prompt("Введіть максимальне значення діапазона"))) }<br>`)
+
 
 /* Створити функцію, яка рахує скільки разів певна буква повторюється в слові.
 Приклад: countLetter("а", "Асталавіста") -> 4 */
@@ -73,7 +62,6 @@ function countLetter(word, letter) {
    counter = arr.filter(arr => arr == letter);
    return( counter.length);
 }
-document.writeln(`Функція №7: ${salaryWithoutTax((word = prompt("Введіть слово")), (letter = prompt("Введіть букву, яку будемо шукати")) ) }<br>`)
 
 
 /* Створіть функцію, яка конвертує долари в гривні та навпаки в залежності від
@@ -97,46 +85,37 @@ else if (currency.includes('uah')) {
    }
    return currency;
 }
-document.writeln(`Функція No8: ${convertCurrency(currency = prompt("Введіть суму та тип валюти в UAH або в $"))}`)
-
-
-
-
-
 
 
 /* Створіть функцію генерації випадкового паролю (тільки числа), довжина
 встановлюється користувачем або по замовчуванню = 8 символам. */
 
-
-
-/*  function genPassword(passwordLength = 8) {
-    const chars = "0123456789";
-     passwordLength = prompt("Введіть кілкість символів");
-    let password = "";
- for (var i = 0; i <= passwordLength; i++) {
+   function genPassword(passwordLength = 8) {
+   const chars = "0123456789";
+   let password = "";
+   for (var i = 1; i <= passwordLength; i++) {
    let randomNumber = Math.floor(Math.random() * chars.length);
    password += chars.substring(randomNumber, randomNumber +1);
-  }
-        return password;
- } */
+   }
+   return password;
+   }
+
+document.writeln(`Функція №1: ${getMaxDigit(number= prompt("Введіть число для визначення"))}<br>`)
+
+document.writeln(`Функція №2: ${getNumber((a = prompt("Введіть число для визначення ступеня ")), (b = prompt("Введіть степінь числа"))) }<br>`)
+
+document.writeln(`Функція №3: ${ucFirst(str = prompt("Введіть ім'я")) }<br>`)
+
+document.writeln(`Функція №4: ${salaryWithoutTax(value = prompt("Введіть розмір заробітної плати")) }<br>`)
+
+document.writeln(`Функція №5: ${getRandomNumber((min = prompt("Введіть мінімальне значення діапазона")),(max = prompt("Введіть максимальне значення діапазона"))) }<br>`)
+
+document.writeln(`Функція №6: ${countLetter((word = prompt("Введіть слово")), (letter = prompt("Введіть букву, яку будемо шукати")) ) }<br>`)
+
+document.writeln(`Функція No7: ${convertCurrency(currency = prompt("Введіть суму та тип валюти в UAH або в $"))}<br>`)
+
+document.writeln(`Функція No9: ${genPassword(passwordLength = prompt("Введіть кілкість символів"))}<br>`)
 
 
-/* Приклад: getRandomPassword(4) -> 1875, getRandomPassword() -> 87240124 */
 
-
-
-/* Створіть функцію, яка видаляє всі букви з речення. Приклад: deleteLetters('a',
-"blablabla") -> "blblbl" */
-
-
-
-/* Створіть функцію, яка перевіряє, чи є слово паліндромом. Приклад:
-isPalyndrom("мадам") -> true, isPalyndrom("кокос") -> false, isPalyndrom("Я несу
-гусеня") -> true */
-
-
-
-/* Створіть функцію, яка видалить з речення букви, які зустрічаються більше 1 разу.
-Приклад: deleteDuplicateLetter("Бісквіт був дуже ніжним") -> "сктдеим" */
 
