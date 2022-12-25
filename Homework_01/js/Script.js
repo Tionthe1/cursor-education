@@ -57,22 +57,26 @@ console.log(
 
 const discount = Math.floor(Math.random() * 50);
 
-
 /* Зробіть клієнту випадкову знижку та виведіть суму до оплати округлену до 2 знаків
 після коми.
 Виведіть чистий прибуток, якщо клієнт заплатив зі знижкою та собівартість товарів
 рівно в два рази нижче їх ціни? */
 
 const priceWhithDiscountTea = (tea - (tea * discount) / 100).toFixed(2);
-const priceWhithDiscountSandwich = ( sandwich - (sandwich * discount) / 100).toFixed(2);
+const priceWhithDiscountSandwich = (
+  sandwich -
+  (sandwich * discount) / 100
+).toFixed(2);
 const priceWhithDiscountFree = (free - (free * discount) / 100).toFixed(2);
-
 
 console.log("Ціна зі знижкою 'Tea': ", priceWhithDiscountTea);
 console.log("Чистий прибуток 'Tea': ", priceWhithDiscountTea - tea / 2);
 
 console.log("Ціна зі знижкою 'Sandwich': ", priceWhithDiscountSandwich);
-console.log("Чистий прибуток 'Sandwich': ", priceWhithDiscountSandwich - sandwich / 2);
+console.log(
+  "Чистий прибуток 'Sandwich': ",
+  priceWhithDiscountSandwich - sandwich / 2
+);
 
 console.log("Ціна зі знижкою 'Free': ", priceWhithDiscountFree);
 console.log("Чистий прибуток 'Free': ", priceWhithDiscountFree - free / 2);
@@ -84,16 +88,36 @@ console.log(`Максимальна ціна: ${Math.max(tea, sandwich, free)}
 Мінімальна ціна: ${Math.min(tea, sandwich, free)}
 Сума вартості всіх товарів: ${tea + sandwich + free}
 Сума вартості всіх товарів, округлена в меньшу сторону: ${
-  Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)}
-Сума округлена до сотень: ${Math.round (ttl / 100) * 100}
-${ Math.floor(Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)) % 2 ===  0 ? "Округлена сума всіх товарів є парним числом " + true
-: "Округлена сума всіх товарів є парним числом " + false }
+  Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)
+}
+Сума округлена до сотень: ${Math.round(ttl / 100) * 100}
+${
+  Math.floor(Math.floor(tea) + Math.floor(sandwich) + Math.floor(free)) % 2 ===
+  0
+    ? "Округлена сума всіх товарів є парним числом " + true
+    : "Округлена сума всіх товарів є парним числом " + false
+}
 Решта: ${500 - ttl}
-Середнє значення цін, округлене до другого знаку після коми: ${( tea + sandwich + free / 3).toFixed(2)}
-Ціна зі знижкою 'Tea': ${(tea - (tea * Math.floor(Math.random() * 50)) / 100).toFixed(2)}
+Середнє значення цін, округлене до другого знаку після коми: ${(
+  tea +
+  sandwich +
+  free / 3
+).toFixed(2)}
+Ціна зі знижкою 'Tea': ${(
+  tea -
+  (tea * Math.floor(Math.random() * 50)) / 100
+).toFixed(2)}
 Чистий прибуток 'Tea': ${(tea - (tea * discount) / 100).toFixed(2) - tea / 2}
-Ціна зі знижкою 'Sandwich': ${(sandwich - (sandwich * Math.floor(Math.random() * 50)) / 100).toFixed(2)}
-Чистий прибуток 'Sandwich': ${(sandwich - (sandwich * discount) / 100).toFixed(2) - tea / 2}
-Ціна зі знижкою 'Free': ${(free - (free * Math.floor(Math.random() * 50)) / 100).toFixed(2)}
+Ціна зі знижкою 'Sandwich': ${(
+  sandwich -
+  (sandwich * Math.floor(Math.random() * 50)) / 100
+).toFixed(2)}
+Чистий прибуток 'Sandwich': ${
+  (sandwich - (sandwich * discount) / 100).toFixed(2) - tea / 2
+}
+Ціна зі знижкою 'Free': ${(
+  free -
+  (free * Math.floor(Math.random() * 50)) / 100
+).toFixed(2)}
 Чистий прибуток 'Free': ${(free - (free * discount) / 100).toFixed(2) - tea / 2}
 `);
