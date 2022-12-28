@@ -4,8 +4,8 @@
 function getMaxDigit(number) {
   let arr = String(number).split("");
   return Number(Math.max(...arr));
-  number = getMaxDigit(number);
-  return number;
+  //number = getMaxDigit(number);
+  //return number;
 }
 
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
@@ -13,9 +13,11 @@ function getMaxDigit(number) {
 
 function getNumberExponent(a, b) {
   let result = a;
+  let temp = a;
   if (b < 0) {
     for (let i = 1; i < Math.abs(b); i++) {
-      result = 1 / (a * a);
+      temp *= a;
+      result = 1 / temp;
     }
   } else {
     for (let i = 1; i < b; i++) {
@@ -51,9 +53,10 @@ function getRandomNumber(min, max) {
 Приклад: countLetter("а", "Асталавіста") -> 4 */
 
 function countLetter(word, letter) {
-  word = word.toLowerCase();
+  //word = word.toLowerCase();
   letter = letter.toLowerCase();
-  let arr = word.split("");
+  //let arr = word.split("");
+  const arr = word.toLowerCase().split("");
   let counter = 0;
   counter = arr.filter((arr) => arr == letter);
   return counter.length;
