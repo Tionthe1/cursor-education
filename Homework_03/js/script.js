@@ -11,10 +11,16 @@ function getMaxDigit(number) {
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
  **. Використовуйте цикл */
 
-function getNumber(a, b) {
+function getNumberExponent(a, b) {
   let result = a;
-  for (let i = 1; i < b; i++) {
-    result *= a;
+  if (b < 0) {
+    for (let i = 1; i < Math.abs(b); i++) {
+      result = 1 / (a * a);
+    }
+  } else {
+    for (let i = 1; i < b; i++) {
+      result *= a;
+    }
   }
   return result;
 }
@@ -92,7 +98,7 @@ document.writeln(
 );
 
 document.writeln(
-  `Функція №2: ${getNumber(
+  `Функція №2: ${getNumberExponent(
     (a = prompt("Введіть число для визначення ступеня ")),
     (b = prompt("Введіть степінь числа"))
   )}<br>`
