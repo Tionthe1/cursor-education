@@ -12,9 +12,11 @@ function getMaxDigit(number) {
  **. Використовуйте цикл */
 
 function getNumberExponent(a, b) {
-  let result = a;
+  let result = 0;
   let temp = a;
-  if (b < 0) {
+  if (b == 0) {
+    result = 1;
+  } else if (b < 0) {
     for (let i = 1; i < Math.abs(b); i++) {
       temp *= a;
       result = 1 / temp;
@@ -102,8 +104,8 @@ document.writeln(
 
 document.writeln(
   `Функція №2: ${getNumberExponent(
-    (a = prompt("Введіть число для визначення ступеня ")),
-    (b = prompt("Введіть степінь числа"))
+    (a = Number(prompt("Введіть число для визначення ступеня "))),
+    (b = Number(prompt("Введіть степінь числа")))
   )}<br>`
 );
 

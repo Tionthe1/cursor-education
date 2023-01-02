@@ -44,6 +44,11 @@ function getPairsThemes(pairs, themes) {
 console.log(getPairsThemes(pairs, themes));
 //console.log(students, themes, marks);
 
+
+//for (let i = 0; i < pairsThemes.length; i++)
+
+
+
 //3.Зіставте оцінки(marks) зі студентом(students): [["Саша", 4], [...], [...]]
 
 const studentsMarks = getStudentsMarks(students, marks);

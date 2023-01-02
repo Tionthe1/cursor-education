@@ -45,12 +45,27 @@ kidding?") -> "Are you ****ing kidding?" Приклад: replaceBadWords("Holy s
 Приклад: generateCombinations("man") -> ["man", "mna", "amn", "anm", "nam", "nma"]
 Приклад: generateCombinations("ol") -> ["ol", "lo"] */
 
-
 /* 1. Створіть функцію getRandomArray(length, min, max) – яка повертає масив
 випадкових цілих чисел. У функції є параметри: length - довжина масиву, min –
 мінімальне значення цілого числа, max – максимальне значення цілого числа.
 Приклад: getRandomArray(15, 1, 100) –> [6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2] */
 
-function getRandomArray(length, min, max){
-   
-};
+let length = Math.floor(Math.random() * 100);
+let min = (Math.random() * 100) / 2;
+let max = Math.random() * 100 * 2;
+
+function getRandomArray(length, min, max) {
+  let length = Math.floor(Math.random() * 100);
+  let min = (Math.random() * 100) / 2;
+  let max = Math.random() * 100 * 2;
+  return new Array(length)
+    .fill(0)
+    .map((el) => Math.floor(Math.random() * (max - min) + min));
+}
+console.log(getRandomArray(length, min, max));
+
+/* 2. Створіть функцію getModa(...numbers) – яка вираховує моду всіх переданих в неї
+аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ Приклад: getModa(6, 2, 55, 11, 78, 2, 55, 77,
+57, 87, 23, 2, 56, 3, 2) –> 2 */
+
+function getModa(...numbers) {}
