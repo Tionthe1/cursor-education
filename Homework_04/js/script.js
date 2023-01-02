@@ -27,27 +27,23 @@ console.log(getPairs(students));
 
 //pairs [[],[],[]], themes['','','']()
 
-//pairsThemes[['',''], ['',''], ['','']]
-
+//pairsThemes[['',''], ['',''],]
 const pairsThemes = getPairsThemes(pairs, themes);
 
 function getPairsThemes(pairs, themes) {
   const arrPairs = pairs.slice();
+  const arrThemes = themes.slice();
   let arrPairsThemes = [];
-  arrPairsThemes.push(
-    [arrPairs[0][0] + " і " + arrPairs[0][1] + ", " + themes[0]],
-    [arrPairs[1][0] + " і " + arrPairs[1][1] + ", " + themes[1]],
-    [arrPairs[2][0] + " і " + arrPairs[2][1] + ", " + themes[2]]
-  );
+  for (let i = 0; i < arrPairs.length; i++) {
+    arrPairsThemes.push([arrPairs[i].join(" i "), arrThemes[i]]);
+  }
+
   return arrPairsThemes;
 }
 console.log(getPairsThemes(pairs, themes));
 //console.log(students, themes, marks);
 
-
 //for (let i = 0; i < pairsThemes.length; i++)
-
-
 
 //3.Зіставте оцінки(marks) зі студентом(students): [["Саша", 4], [...], [...]]
 
