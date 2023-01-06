@@ -26,18 +26,7 @@ statistics: [4, 5, 5, 5, 5, 3, 4, 3, 4, 5],
 english: [5, 3],
 cosmology: [5, 5, 5, 5]
 }
-}];
-
-
-
-
-
-
-Створіть функцію getBestStudent(students) --> "Anton" – яка повертає кращого
-студента зі списку по показнику середньої оцінки.
-Cтворіть функцію calculateWordLetters("тест") --> { "т": 2, "е": 1, "с": 1 } – яка
-повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх
-повторень. */
+}]; */
 
 const students = [
   {
@@ -107,7 +96,7 @@ function getStudentInfo(students) {
   const studentinfo = {
     course: students.course,
     name: students.name,
-    "averageMark": getAverageMark(students),
+    averageMark: getAverageMark(students),
   };
   return studentinfo;
 }
@@ -115,3 +104,54 @@ console.log(getStudentInfo(students[0]));
 
 /* Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"] – яка
 повертає імена студентів у алфавітному порядку. */
+
+function getStudentsNames(students) {
+  const studsNames = [];
+  for (let key in students) {
+    studsNames.push(students[key][`name`]);
+  }
+  return studsNames.sort();
+}
+console.log(getStudentsNames(students));
+
+/* Створіть функцію getBestStudent(students) --> "Anton" – яка повертає кращого
+студента зі списку по показнику середньої оцінки. */
+
+function getBestStudent(students) {
+  const arr = [];
+  for (let i = 0; i < students.length; i++) {
+    const marks = Object.values(students[i].subjects).flat();
+    const averageMarks = (
+      marks.reduce((accumulator, currentValue) => accumulator + currentValue) /
+      marks.length
+    ).toFixed(2);
+    students[i].average = averageMarks;
+    arr.push(averageMarks);
+  }
+  console.log(arr);
+  const max = Math.max(...arr);
+  console.log(max);
+  let bestStudent;
+  students.forEach(function (student) {
+    if (student.average == max) {
+      bestStudent = student.name;
+    }
+  });
+  return bestStudent;
+}
+console.log(getBestStudent(students));
+
+/* Cтворіть функцію calculateWordLetters("тест") --> { "т": 2, "е": 1, "с": 1 } – яка
+повертає обє'кт, в якому ключі це букви у слові, а значення – кількість їх
+повторень. */
+function calculateWordLetters(word) {
+  wordArr = word.toLowerCase().split("");
+  console.log(wordArr);
+  const result = {};
+  wordArr.forEach(function (elem) {
+    if (result[elem] != undefined) ++result[elem];
+    else result[elem] = 1;
+  });
+  return result;
+}
+console.log( calculateWordLetters("аБабаГалаМага"));
