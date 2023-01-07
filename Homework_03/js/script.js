@@ -12,7 +12,14 @@ function getMaxDigit(number) {
  **. Використовуйте цикл */
 
 function getNumberExponent(a, b) {
-  let result = 0;
+  while (a === 0) {
+    a = Number(
+      prompt(
+        "Число для визначення ступеня не може дорівнювати нулю, введіть число для визначення ступеня"
+      )
+    );
+  }
+  let result = a;
   let temp = a;
   if (b == 0) {
     result = 1;
@@ -28,7 +35,6 @@ function getNumberExponent(a, b) {
   }
   return result;
 }
-
 /* Створити функцію, яка форматує ім'я, роблячи першу букву великою. ("влад" ->
 "Влад", "вЛАД" -> "Влад" і так далі); */
 
