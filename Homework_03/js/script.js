@@ -4,8 +4,7 @@
 function getMaxDigit(number) {
   let arr = String(number).split("");
   return Number(Math.max(...arr));
-  //number = getMaxDigit(number);
-  //return number;
+  
 }
 
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
