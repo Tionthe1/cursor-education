@@ -21,7 +21,6 @@ console.log(getRandomArray(length, min, max));
 const numbers = [6, 2, 55, 11, 78, 2.5, 55, 77, 5.7, 87, 23, 2, 5.6, 3, -2];
 function getAverage(...numbers) {
   let res = numbers.filter((item) => Number.isInteger(item));
-  console.log(res);
 
   result = res.reduce((sum, current) => sum + current) / res.length;
   return result;
@@ -45,11 +44,8 @@ console.log(filterEvenNumbers(...arr));
 const arrOfNumbers = [1, -2, 3, -4, -5, 6, 5, 98, -34];
 
 function countPositiveNumbers(...arrOfNumbers) {
-  /* const positiveNumbers = arrOfNumbers.filter((item) => {
-    return item > 0;
-  });
-  return positiveNumbers.length; */
-  return arrOfNumbers.filter((item) => item > 0).length;
+  const isInteger = arrOfNumbers.filter((el) => Number.isInteger(el));
+  return isInteger.filter((item) => item > 0).length;
 }
 console.log(countPositiveNumbers(...arrOfNumbers));
 
