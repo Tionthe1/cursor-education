@@ -44,8 +44,8 @@ console.log(filterEvenNumbers(...arr));
 const arrOfNumbers = [1, -2, 3, -4, -5, 6, 5, 98, -34];
 
 function countPositiveNumbers(...arrOfNumbers) {
-  const isInteger = arrOfNumbers.filter((el) => Number.isInteger(el));
-  return isInteger.filter((item) => item > 0).length;
+  const isNumberInteger = arrOfNumbers.filter((el) => Number.isInteger(el));
+  return isNumberInteger.filter((item) => item > 0).length;
 }
 console.log(countPositiveNumbers(...arrOfNumbers));
 
