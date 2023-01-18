@@ -1,0 +1,54 @@
+.title {
+  text-align: center;
+}Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@Tionthe1 
+Shmyhelskiy
+/
+Cursor-homework
+Public
+Fork your own copy of Shmyhelskiy/Cursor-homework
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Cursor-homework/Homework-09/Style.css
+@Shmyhelskiy
+Shmyhelskiy homework09
+Latest commit 55eaed7 yesterday
+ History
+ 1 contributor
+30 lines (29 sloc)  445 Bytes
+
+
+
+.title {
+  text-align: center;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+}
