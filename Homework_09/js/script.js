@@ -20,12 +20,10 @@ function generateBlocks() {
   for (let i = 0; i < 25; i++) {
     const div = document.createElement("div");
     div.style.backgroundColor = getRandomColor();
-    let tempContainer = container.append(div);
     container.append(div);
   }
-  return;
 }
-//generateBlocks();
+
 
 function changeColor() {
   const divBlocks = document.querySelectorAll(".container > div");
