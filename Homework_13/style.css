@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+   font-family: Yellowtail;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  text-align: center;
+  background: #2b2d42;
+color: #b3a78f;
+
+}
+.main{
+   display: flex;
+   flex-direction: column;
+}
+
+.result{
+   font-size: 40px;
+}
+.btn  {
+   width: 200px;
+   height: 50px;
+   font-family: Yellowtail;
+   margin: 50px;
+}
+p{font-size: 50px;}
+a {
+   
+   position: relative;
+   background: #b3a78f;
+   color: #2b2d42;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 0.1em;
+   padding: 10px 30px;
+   transition: 0.5s;
+}
+a:hover{
+   color: #b3a78f;
+   background: var(--clr);
+   letter-spacing: 0.25em;
+box-shadow: 0 0 35px var(--clr);
+}
+span{font-family: Yellowtail;}
