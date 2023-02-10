@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./css/style.css" rel="stylesheet" type="text/css">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+   </style>
+   <title>Document</title>
+</head>
+
+<body>
+
+   <div class="main">
+      <div class="container-start">
+
+         <div class="planets">
+            <a href="#" class="planets-btn">Planets</a>
+            <a href="#"><img class="tatoine" src="./img/tatoine.png" alt="" width="397"></a>
+         </div>
+         <div class="logo">
+            <img src="./img/sw_logo.webp" alt="" width="272">
+         </div>
+         <div class="heroes">
+            <a href="#"><img class="dart" src="./img/dart.webp" alt="" width="611"></a>
+            <a href="#" class="heroes-btn">heroes</a>
+         </div>
+      </div>
+      <div class="container-choose_heroes">
+         <div class="container-choose_heroes_header">
+            <a href="index.html" class="back-btn">
+               <img src="./img/back-btn.png" alt="">
+            </a>
+
+            <h1 class="text">Choose episode</h1>
+            <a href="index.html" class="main-page"><img src="./img/dart.webp" width="272" alt=""></a>
+         </div>
+         <div class="form-wrapper">
+            <form action="" class="actors_form" onsubmit="return false">
+               <input type="number" min="1" max="6" class="input" placeholder="EPISODE" required>
+               <button class="btn_info">отримати інформацію</button>
+
+            </form>
+            <p class="search-subinfo"></p>
+         </div>
+         <div class="container">
+            <div class="actors-block"></div>
+         </div>
+      </div>
+      <div class="container-choose_planets">
+         <div class="container-choose_planets_header">
+            <a href="index.html" class="back-btn">
+               <img src="./img/back-btn.png" alt="">
+            </a>
+            <h1 class="text">PLANETS</h1>
+            <a href="index.html" class="main-page"><img src="./img/tatoine.png" height="172" alt=""></a>
+         </div>
+         <div class="planet-block">
+            <div class="planet-box"></div>
+            <div class="page-btns">
+               <button id="btn-prev" class="button"> Попередня</button>
+               <button id="btn-next" class="button">Наступна </button>
+            </div>
+         </div>
+         
+      </div>
+   </div>
+
+
+
+   <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

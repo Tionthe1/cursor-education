@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Roboto";
+}
+html, body{
+    height: 100%;
+}
+.main{
+    height: 100%;
+    padding: 20px;
+}
+
+.planets{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.planets-btn, .heroes-btn, .button{
+    
+margin: 150px, auto;
+width: 210px;
+height: 48px;
+display: inline-block;
+font-size: 20px;
+font-weight: bold;
+background: #FFF347;
+padding: 12px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+color: #000000;
+border-radius: 24px;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+.heroes-btn, .button{
+    background: #4D9C7D;
+    color: #ffffff;
+}
+.planets-btn:hover, .planets-btn:focus, .planets-btn:active{
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+transform: scale(1.1);
+}
+.heroes-btn:hover, .heroes-btn:focus, .heroes-btn:active{
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+transform: scale(1.1);
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dart{
+    margin-bottom: 30px;
+}
+.tatoine{margin-top: 30px;}
+.heroes{
+ display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.tatoine, .dart {
+		transition: 0.3s; /* Час ефекту  */		
+    }
+	.tatoine:hover, .dart:hover {
+		transform: scale(1.1); /* Збільшуємо масштаб */		
+    }
+
+    /* start */
+    .container-start{
+    
+ height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.actors_form{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 5px auto 20px;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 50px 50px;
+    background:#FFF347;
+    z-index:2
+}
+
+.input{
+    min-width: 140px;
+}
+.input,
+.btn_info{
+    border: 1px solid;
+    border-radius: 0px 0 0 0px;
+    padding: 7px;
+    font: 800 12px Roboto;
+    outline: none;
+    color: #FFF347;
+    
+}
+.btn_info{
+    border-radius: 17px 17px 17px 17px;
+    cursor: pointer;
+    text-transform: uppercase;
+   
+}
+
+/* heroes */
+.container-choose_heroes{
+    display: none;
+}
+    .container-choose_heroes_header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+    
+    }
+    .container-choose_episodes-heroes{
+    width: 920px;
+    height: 420px;
+    display:flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    }
+
+    .container-choose_planets{
+    display: none;
+}
+
+    .container-choose_episodes-planets{
+ width: 920px;
+    height: 420px;
+    display:flex;
+  margin: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    }
+    
+    .container-choose_planets_header{
+        display: flex;
+        justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+    }
+    .text {
+        margin-top: 200px;
+        text-transform: uppercase;
+        align-self: flex-end;
+        color: #ffffff;
+        font-size: 96px;
+        font-weight: bold;
+    }
+   
+.choose-heroes_btn{
+    margin: 15px;
+}
+.back-btn, .main-page{
+    margin-bottom: 30px;
+}
+
+.container {
+    color: #4D9C7D;
+    width: 1124px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    transition: .2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.actor-block {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #4D9C7D;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.actor-block p {
+    margin-bottom: 10px;
+}
+
+.actor-name {
+    font-size: 20px;
+    color: #FFF347;
+    margin-bottom: 10px;
+}
+
+.actor-icon {
+    width: 100px;
+    height: 100px;
+}
+.search-subinfo {
+    margin: 10px auto;
+    color: #FFF347;
+    width: 785px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.actor_style{
+    width: 115px;
+    height: 140px;
+    margin: 10px auto;
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+    box-shadow: 1px 0px 5px 2px rgb(34 60 80 / 20%) inset;
+}
+.actor_style:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+/* planet */
+
+.planet-box {
+    color: #4D9C7D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-block {
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.planet-wrapper {
+    border: 1px solid #4D9C7D;
+    margin: 10px;
+    padding: 10px;
+}
+
+.planets-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    color: #4D9C7D;
+}
+
+.planet-wrapper {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.planet-wrapper p {
+    margin-top: 10px;
+}
+.page-btns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    }
+
