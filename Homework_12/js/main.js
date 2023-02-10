@@ -1,5 +1,5 @@
 import { heroesBase } from "./heroes.js";
-//import { planets } from "./planets.js";
+
 
 const BASE_URL = "https://swapi.dev/api";
 
@@ -18,7 +18,6 @@ function $(name) {
 const start = $(".container-start");
 const planets = $(".planets");
 const heroes = $(".heroes");
-const back = $(".back-btn");
 const choosePlanet = $(".container-choose_planets");
 const chooseHeroes = $(".container-choose_heroes");
 const form = $(".actors_form");
@@ -83,12 +82,12 @@ async function getMovieInfo() {
   searchInfo.innerHTML = `<span>Сюжет: ${movieInfo.opening_crawl}</span>`;
   const allActors = await movieInfo.characters;
   if (inputValue === "") {
-    searchInfo.innerHTML = `<span>Виберіть фільм з 1 по 6 частини</span>`;
+    searchInfo.innerHTML = `<span>"Оберіть частину з 1 по 6</span>`;
   } else {
     searchInfo.innerHTML = `<span>Сюжет: ${movieInfo.opening_crawl}</span>`;
   }
   if (inputValue > 6) {
-    alert("Виберіть фільм з 1 по 6 частину");
+    alert("Оберіть частину з 1 по 6 ");
   }
   await allActors.forEach(getActorsInfo());
 }
