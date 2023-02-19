@@ -1,6 +1,5 @@
 import { heroesBase } from "./heroes.js";
 
-
 const BASE_URL = "https://swapi.dev/api";
 
 const input = document.querySelector(".input");
@@ -131,15 +130,7 @@ btnNext.addEventListener("click", function () {
   planetBox.innerHTML = "";
   getPlanets(page);
 });
-btnNext.addEventListener("click", function () {
-  if (page == 6) {
-    page = 1;
-  } else {
-    page++;
-  }
-  planetBox.innerHTML = "";
-  getPlanets(page);
-});
+
 btnPrev.addEventListener("click", function () {
   if (page == 1) {
     page = 6;

@@ -1,7 +1,7 @@
 /* Створити функцію getMaxDigit(number) – яка отримує будь-яке число та
 виводить найбільшу цифру в цьому числі. Приклади: 1236 -> 6, 987 -> 9, 385 -> 8 */
 
-function getMaxDigit(number) {
+export function getMaxDigit(number) {
   let arr = String(number).split("");
   return Number(Math.max(...arr));
   
