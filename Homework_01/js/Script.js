@@ -1,4 +1,4 @@
-function doAllCalculations() {
+export function doAllCalculations() {
   const tea = 15.678;
   const sandwich = 123.965;
   const free = 90.2345;
@@ -93,7 +93,7 @@ ${
 `
   );
 
-  const output = document.getElementById("output");
+  const output = document.querySelector(".output");
   output.innerHTML = `Максимальна ціна: ${Math.max(tea, sandwich, free)} <br>
 Мінімальна ціна: ${Math.min(tea, sandwich, free)}<br>
 Сума вартості всіх товарів: ${tea + sandwich + free}<br>
@@ -134,3 +134,4 @@ ${
 Чистий прибуток 'Free': ${(free - (free * discount) / 100).toFixed(2) - tea / 2}
 `;
 }
+doAllCalculations();

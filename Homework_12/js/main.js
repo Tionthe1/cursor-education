@@ -74,6 +74,11 @@ async function getActors(character) {
 getActors();
 
 async function getMovieInfo() {
+  
+  if (inputValue > 6) {
+    alert("Оберіть частину з 1 по 6 ");
+    return;
+  }
   const requestMovie = await fetch(`${BASE_URL}/films/${inputValue}`);
   const movieInfo = await requestMovie.json();
 
@@ -85,9 +90,7 @@ async function getMovieInfo() {
   } else {
     searchInfo.innerHTML = `<span>Сюжет: ${movieInfo.opening_crawl}</span>`;
   }
-  if (inputValue > 6) {
-    alert("Оберіть частину з 1 по 6 ");
-  }
+  
   await allActors.forEach(getActorsInfo());
 }
 button.addEventListener("click", () => {

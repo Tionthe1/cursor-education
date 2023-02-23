@@ -1,12 +1,11 @@
 /* Створити функцію getMaxDigit(number) – яка отримує будь-яке число та
 виводить найбільшу цифру в цьому числі. Приклади: 1236 -> 6, 987 -> 9, 385 -> 8 */
 
-export function getMaxDigit(number) {
+function getMaxDigit(number) {
   let arr = String(number).split("");
   return Number(Math.max(...arr));
   
 }
-
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
  **. Використовуйте цикл */
 
@@ -91,7 +90,7 @@ function convertCurrency(currency) {
 /* Створіть функцію генерації випадкового паролю (тільки числа), довжина
 встановлюється користувачем або по замовчуванню = 8 символам. */
 
-function genPassword(passwordLength = 8) {
+export function genPassword(passwordLength = 8) {
   const chars = "0123456789";
   let password = "";
   for (var i = 1; i <= passwordLength; i++) {
@@ -100,6 +99,7 @@ function genPassword(passwordLength = 8) {
   }
   return password;
 }
+
 
 document.writeln(
   `Функція №1: ${getMaxDigit(
