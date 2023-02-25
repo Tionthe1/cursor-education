@@ -68,7 +68,7 @@ export function SumOfNumbers() {
 
   //return sumValue;
 
-  const output = document.querySelector(".output-2");
+  const output = document.querySelector(".hw-2");
   output.innerHTML = `
   Перше значення: ${firstValue}<br>
   Друге значення: ${secondValue}<br>

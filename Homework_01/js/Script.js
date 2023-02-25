@@ -93,7 +93,7 @@ ${
 `
   );
 
-  const output = document.querySelector(".output");
+  const output = document.querySelector(".hw-1");
   output.innerHTML = `Максимальна ціна: ${Math.max(tea, sandwich, free)} <br>
 Мінімальна ціна: ${Math.min(tea, sandwich, free)}<br>
 Сума вартості всіх товарів: ${tea + sandwich + free}<br>
