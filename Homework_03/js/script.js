@@ -4,7 +4,6 @@
 function getMaxDigit(number) {
   let arr = String(number).split("");
   return Number(Math.max(...arr));
-  
 }
 /* Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та
  **. Використовуйте цикл */
@@ -91,15 +90,19 @@ function convertCurrency(currency) {
 встановлюється користувачем або по замовчуванню = 8 символам. */
 
 export function genPassword(passwordLength = 8) {
+  passwordLength = prompt("Введіть кілкість символів");
   const chars = "0123456789";
   let password = "";
   for (var i = 1; i <= passwordLength; i++) {
     let randomNumber = Math.floor(Math.random() * chars.length);
     password += chars.substring(randomNumber, randomNumber + 1);
   }
-  return password;
-}
+  //return password;
 
+  const output = document.querySelector(".hw-3");
+  output.innerHTML = `password: ${password}`;
+}
+genPassword();
 
 document.writeln(
   `Функція №1: ${getMaxDigit(
