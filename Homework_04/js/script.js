@@ -11,14 +11,18 @@ const marks = [4, 5, 5, 3, 4, 5];
 повинен вийти вкладений масив з парами студентів: [["Олександр", "Олена"], [..],
 [...]]; */
 const pairs = getPairs(students);
-function getPairs(students) {
+export function getPairs(students) {
+  students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];
   let studPairs = [
     [students[0], students[2]],
     [students[1], students[3]],
     [students[4], students[5]],
   ];
-  return studPairs;
+ // return studPairs;
+  const output = document.querySelector(".hw-4");
+  output.innerHTML = `${studPairs}`;
 }
+getPairs();
 console.log(getPairs(students));
 
 /* 2.Зіставте пари з попереднього завдання та теми проєктів, над якими студенти
