@@ -89,22 +89,9 @@ function convertCurrency(currency) {
 /* Створіть функцію генерації випадкового паролю (тільки числа), довжина
 встановлюється користувачем або по замовчуванню = 8 символам. */
 
-export function genPassword(passwordLength = 8) {
-  passwordLength = prompt("Введіть кілкість символів");
-  const chars = "0123456789";
-  let password = "";
-  for (var i = 1; i <= passwordLength; i++) {
-    let randomNumber = Math.floor(Math.random() * chars.length);
-    password += chars.substring(randomNumber, randomNumber + 1);
-  }
-  //return password;
 
-  const output = document.querySelector(".hw-3");
-  output.innerHTML = `password: ${password}`;
-}
-genPassword();
 
-document.writeln(
+/* document.writeln(
   `Функція №1: ${getMaxDigit(
     (number = prompt("Введіть число для визначення"))
   )}<br>`
@@ -149,4 +136,20 @@ document.writeln(
   `Функція No8: ${genPassword(
     (passwordLength = prompt("Введіть кілкість символів"))
   )}<br>`
-);
+); */
+
+
+export function genPassword(passwordLength = 8) {
+  passwordLength = prompt("Введіть кілкість символів");
+  const chars = "0123456789";
+  let password = "";
+  for (var i = 1; i <= passwordLength; i++) {
+    let randomNumber = Math.floor(Math.random() * chars.length);
+    password += chars.substring(randomNumber, randomNumber + 1);
+  }
+  //return password;
+
+  const output = document.querySelector(".hw-3");
+  output.innerHTML = `password: ${password}`;
+}
+genPassword();
