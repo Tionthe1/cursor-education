@@ -352,3 +352,45 @@ document.querySelector(".hw-9").innerHTML = `${getRandomColor()}`;
 
 //hw-10
 
+/* function playSound(e) {
+  const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+  const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+  if (!audio) return;
+  audio.play();
+  audio.currentTime = 0;
+  console.log(key);
+  key.classList.add("playing");
+}
+
+function removeTransition(e) {
+  if (e.propertyName !== "transform") return;
+  this.classList.remove("playing");
+}
+
+const keys = document.querySelectorAll(".key");
+keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
+window.addEventListener("keydown", playSound); */
+
+//hw-11
+export function chin(){
+let length = 8;
+async function getRandomChinese(length) {
+  let result = "";
+  let i = 0;
+  while (i < length) {
+    let date = Date.now();
+    let sign = String(date).slice(-5);
+    let char = String.fromCharCode(sign);
+    result += char;
+    await delay(50);
+    i++;
+  }
+  return result;
+}
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+getRandomChinese(length).then((value) => {
+  document.querySelector(".hw-11").innerHTML = value;
+});}
+chin()
