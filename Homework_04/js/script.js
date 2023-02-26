@@ -10,20 +10,6 @@ const marks = [4, 5, 5, 3, 4, 5];
 /* 1.Розділіть студентів на пари(хлопець + дівчина) для работи над проєктом. У вас
 повинен вийти вкладений масив з парами студентів: [["Олександр", "Олена"], [..],
 [...]]; */
-const pairs = getPairs(students);
-export function getPairs(students) {
-  students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];
-  let studPairs = [
-    [students[0], students[2]],
-    [students[1], students[3]],
-    [students[4], students[5]],
-  ];
- // return studPairs;
-  const output = document.querySelector(".hw-4");
-  output.innerHTML = `${studPairs}`;
-}
-getPairs();
-console.log(getPairs(students));
 
 /* 2.Зіставте пари з попереднього завдання та теми проєктів, над якими студенти
 будуть працювати. Повинен вийти вкладений масив виду: [["Олександр і Олена",
@@ -82,3 +68,17 @@ function getPairsMarks(pairsThemes) {
   return arrPairsMarks;
 }
 console.log(pairsMarks);
+const pairs = getPairs(students);
+export function getPairs(students) {
+  students = ["Олександр", "Ігор", "Олена", "Іра", "Олексій", "Світлана"];
+  let studPairs = [
+    [students[0], students[2]],
+    [students[1], students[3]],
+    [students[4], students[5]],
+  ];
+  // return studPairs;
+  const output = document.querySelector(".hw-4");
+  output.innerHTML = `${studPairs}`;
+}
+getPairs();
+console.log(getPairs());

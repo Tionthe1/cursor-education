@@ -1,0 +1,1 @@
+const{doAllCalculations,SumOfNumbers,genPassword,getPairs,getAverage,getSubjects,Student}=require("./functions");
