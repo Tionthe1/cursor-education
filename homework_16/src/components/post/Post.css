@@ -39,9 +39,9 @@ p{
 }
 
 .comment {
+   justify-content: flex-end;
    background-repeat: no-repeat;
-   text-align: right;
-   margin:10px;
+  margin:10px;
   display: flex;
   background-image: url('../../assets/icons8-comments-50.png');
   background-size: 20px;
@@ -50,7 +50,7 @@ p{
 }
 .repost{
  background-repeat: no-repeat;
-   text-align: right;
+justify-content: flex-end;
    margin:10px;
   display: flex;
   background-image: url('../../assets/icons8-repeat-50.png');
@@ -59,17 +59,19 @@ p{
   height: 20px;
 }
 
-.like{ background-repeat: no-repeat;
-   text-align: right;
-   margin:10px;
+.like{
+   justify-content: flex-end;
+   background-repeat: no-repeat;
+      margin:10px;
   display: flex;
   background-image: url('../../assets/icons8-heart-50.png');
   background-size: 20px;
   width: 50px;
   height: 20px;}
 
-.download{ background-repeat: no-repeat;
-   text-align: right;
+.download{
+   justify-content: flex-end;
+   background-repeat: no-repeat;
    margin:10px;
   display: flex;
   background-image: url('../../assets/icons8-downloading-updates-50.png');
