@@ -33,7 +33,7 @@ heroes.addEventListener("click", () => {
   choosePlanet.style.display = "none";
 });
 
-let inputValue = "";
+let inputValue = "1";
 input.addEventListener("input", (e) => {
   inputValue = e.target.value;
 });
