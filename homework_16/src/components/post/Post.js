@@ -1,9 +1,6 @@
 import React from "react";
 import "./Post.css";
 
-
-
-
 const post = ({ author_name, content, image, date, photo, nickname }) => {
   return (
     <div className="post">
@@ -23,7 +20,7 @@ const post = ({ author_name, content, image, date, photo, nickname }) => {
         <div className="comment">
           <img
             className="icon"
-            src="../assets/icons8-comments-50.png"
+            src="#"
             alt=""
           />
           482
