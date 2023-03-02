@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/homework_16/static/css/main.90ec86fe.css",
-    "main.js": "/homework_16/static/js/main.5cf650b6.js",
-    "static/js/787.702f20a0.chunk.js": "/homework_16/static/js/787.702f20a0.chunk.js",
-    "index.html": "/homework_16/index.html",
-    "main.90ec86fe.css.map": "/homework_16/static/css/main.90ec86fe.css.map",
-    "main.5cf650b6.js.map": "/homework_16/static/js/main.5cf650b6.js.map",
-    "787.702f20a0.chunk.js.map": "/homework_16/static/js/787.702f20a0.chunk.js.map"
+    "main.css": "/cursor-education/Homework_16/my-app/static/css/main.90ec86fe.css",
+    "main.js": "/cursor-education/Homework_16/my-app/static/js/main.a063e8cd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/cursor-education/Homework_16/my-app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/cursor-education/Homework_16/my-app/index.html",
+    "main.90ec86fe.css.map": "/cursor-education/Homework_16/my-app/static/css/main.90ec86fe.css.map",
+    "main.a063e8cd.js.map": "/cursor-education/Homework_16/my-app/static/js/main.a063e8cd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/cursor-education/Homework_16/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90ec86fe.css",
-    "static/js/main.5cf650b6.js"
+    "static/js/main.a063e8cd.js"
   ]
 }
