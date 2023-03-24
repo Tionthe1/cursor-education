@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cursor-education/Homework_16/my-app/static/css/main.90ec86fe.css",
-    "main.js": "/cursor-education/Homework_16/my-app/static/js/main.a063e8cd.js",
-    "static/js/787.28cb0dcd.chunk.js": "/cursor-education/Homework_16/my-app/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/cursor-education/Homework_16/my-app/index.html",
-    "main.90ec86fe.css.map": "/cursor-education/Homework_16/my-app/static/css/main.90ec86fe.css.map",
-    "main.a063e8cd.js.map": "/cursor-education/Homework_16/my-app/static/js/main.a063e8cd.js.map",
-    "787.28cb0dcd.chunk.js.map": "/cursor-education/Homework_16/my-app/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/react-timer/static/css/main.76bd4a72.css",
+    "main.js": "/react-timer/static/js/main.16c5a839.js",
+    "static/js/787.d27549cd.chunk.js": "/react-timer/static/js/787.d27549cd.chunk.js",
+    "index.html": "/react-timer/index.html",
+    "main.76bd4a72.css.map": "/react-timer/static/css/main.76bd4a72.css.map",
+    "main.16c5a839.js.map": "/react-timer/static/js/main.16c5a839.js.map",
+    "787.d27549cd.chunk.js.map": "/react-timer/static/js/787.d27549cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90ec86fe.css",
-    "static/js/main.a063e8cd.js"
+    "static/css/main.76bd4a72.css",
+    "static/js/main.16c5a839.js"
   ]
 }
