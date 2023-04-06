@@ -1,0 +1,80 @@
+.post{
+   margin: 50px auto;
+   border-radius: 20px;
+   width: 725px;
+   height: 425px;
+   background-color: rgb(31, 31, 66);
+   color: rgb(195, 187, 176);
+}
+.photo-user{
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+   padding: 10px;
+}
+.post-header{
+   display: flex;
+   margin: 0px auto;
+   align-items: center;
+}
+p{
+   margin: 0px auto;
+   padding: 5px;
+}
+.post-img{
+   border-radius: 10px;
+   margin: auto;
+   width: 600px;
+   height: 250px;
+}
+.icon{
+   margin: 10px;
+   color: rgb(195, 187, 176);
+   width: 10px;
+   height: 10px;
+}
+.post-actions{
+ margin-left: 60px;
+   display: flex;
+}
+
+.comment {
+   justify-content: flex-end;
+   background-repeat: no-repeat;
+  margin:10px;
+  display: flex;
+  background-image: url('../../assets/icons8-comments-50.png');
+  background-size: 20px;
+  width: 50px;
+  height: 20px;
+}
+.repost{
+ background-repeat: no-repeat;
+justify-content: flex-end;
+   margin:10px;
+  display: flex;
+  background-image: url('../../assets/icons8-repeat-50.png');
+  background-size: 20px;
+  width: 50px;
+  height: 20px;
+}
+
+.like{
+   justify-content: flex-end;
+   background-repeat: no-repeat;
+      margin:10px;
+  display: flex;
+  background-image: url('../../assets/icons8-heart-50.png');
+  background-size: 20px;
+  width: 50px;
+  height: 20px;}
+
+.download{
+   justify-content: flex-end;
+   background-repeat: no-repeat;
+   margin:10px;
+  display: flex;
+  background-image: url('../../assets/icons8-downloading-updates-50.png');
+  background-size: 20px;
+  width: 50px;
+  height: 20px;}

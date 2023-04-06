@@ -1,0 +1,8 @@
+.contacts{
+   display: flex;
+   justify-content: center;
+   height: 90vh;
+   margin: auto;
+   background-color: black;
+   color: yellow;
+}
